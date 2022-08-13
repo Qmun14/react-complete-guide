@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import './ExpenseForm.css';
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
@@ -25,7 +25,7 @@ const ExpenseForm = () => {
             amount: enteredAmount,
             date: new Date(enteredDate)
         }
-        console.log(expenseData);
+        props.onSaveExpenseData(expenseData);
         // set value input clear : below & panggil value di element ke default value={defaultElement} kayak di bawah return jsx ini
         // keuntungan nya dengan memanfaatkan state kita bisa menggunakan cara "adding Two - way binding" untuk memanipulasi value pada element nya di UI,
         setEnteredTitle('');
