@@ -24,7 +24,8 @@ function Expenses(props) {
           selected={filteredYear}
           onTahunDipilih={filterChangeHandler}
         />
-        {filteredExpenses.map((expense) => (
+        {filteredExpenses.length === 0 && <p> No data found </p>  }
+        {filteredExpenses.length > 0  && filteredExpenses.map((expense) => (
           <ExpenseItem
             key={expense.id}
             title={expense.title}
