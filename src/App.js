@@ -13,7 +13,7 @@ const DUMMY_INIT_EXPENSES = [{
   id: 'a2',
   title: "Buying Smart TV",
   amount: 8750000,
-  date: new Date(2022, 2, 12)
+  date: new Date(2021, 2, 12)
 },
 { 
   id: 'a3',
@@ -26,6 +26,18 @@ const DUMMY_INIT_EXPENSES = [{
   title: "Holiday Expense",
   amount: 25000000,
   date: new Date(2022, 10, 20)
+},
+{ 
+  id: 'a5',
+  title: "A Book",
+  amount: 154000,
+  date: new Date(2019, 10, 20)
+},
+{ 
+  id: 'a6',
+  title: "Holiday Expense",
+  amount: 25000000,
+  date: new Date(2019, 10, 20)
 },
 ];
 
